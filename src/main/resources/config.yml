@@ -1,4 +1,4 @@
 minimize-damage: false
 knockback-velocity:
-  x: 1.1
-  z: 1.1
+  x: 1.2
+  z: 1.2
