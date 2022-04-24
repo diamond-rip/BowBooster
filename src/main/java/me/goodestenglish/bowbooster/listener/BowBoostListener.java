@@ -46,7 +46,7 @@ public class BowBoostListener implements Listener {
     @EventHandler
     public void onEntityDamageByEntity(EntityDamageByEntityEvent event) {
         if (BowBooster.INSTANCE.getConfigFile().getBoolean("minimize-damage")) {
-            if (event.getEntity() instanceof Player && event.getEntity() instanceof Arrow) {
+            if (event.getEntity() instanceof Player && event.getDamager() instanceof Arrow) {
                 Player entity = (Player) event.getEntity();
                 Player damager = (Player) ((Arrow)event.getDamager()).getShooter();
                 if (entity == damager) {
