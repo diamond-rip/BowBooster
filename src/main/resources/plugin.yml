@@ -2,4 +2,3 @@ name: BowBooster
 version: ${project.version}
 author: GoodestEnglish
 main: me.goodestenglish.bowbooster.BowBooster
-depend: [Maid]

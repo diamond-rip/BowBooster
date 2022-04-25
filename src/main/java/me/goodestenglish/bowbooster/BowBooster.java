@@ -2,7 +2,7 @@ package me.goodestenglish.bowbooster;
 
 import lombok.Getter;
 import me.goodestenglish.bowbooster.listener.BowBoostListener;
-import me.goodestenglish.core.utilities.file.ConfigFile;
+import me.goodestenglish.bowbooster.util.ConfigFile;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
