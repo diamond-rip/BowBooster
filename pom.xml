@@ -56,10 +56,11 @@
 
     <dependencies>
         <dependency>
-            <groupId>spg.lgdev</groupId>
-            <artifactId>spigot-server</artifactId>
+            <groupId>org.spigot</groupId>
+            <artifactId>TacoSpigot</artifactId>
             <version>1.8.8-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
+            <scope>system</scope>
+            <systemPath>${basedir}/libs/TacoSpigot-1.8.8.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>

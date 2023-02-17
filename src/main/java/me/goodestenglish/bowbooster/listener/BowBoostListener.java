@@ -36,8 +36,9 @@ public class BowBoostListener implements Listener {
             double speed = Math.sqrt(velocity.getX() * velocity.getX() + velocity.getZ() * velocity.getZ());
             Vector dir = arrow.getLocation().getDirection().normalize();
             double xVelocity = BowBooster.INSTANCE.getConfigFile().getDouble("knockback-velocity.x");
+            double yVelocity = BowBooster.INSTANCE.getConfigFile().getDouble("knockback-velocity.y");
             double zVelocity = BowBooster.INSTANCE.getConfigFile().getDouble("knockback-velocity.z");
-            Vector newVelocity = new Vector((dir.getX() * speed * -1.0) * xVelocity, velocity.getY(), dir.getZ() * speed * zVelocity);
+            Vector newVelocity = new Vector((dir.getX() * speed * -1.0) * xVelocity, velocity.getY() * yVelocity, dir.getZ() * speed * zVelocity);
 
             e.setVelocity(newVelocity);
         }
